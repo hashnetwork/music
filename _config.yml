@@ -1,1 +1,9 @@
-baseurl: "/music" # Only necessary if using custom paths or assets
+# Build settings
+paginate: 5 # Number of posts per page
+# paginate_path: "/page:num/"
+paginate_path: "/music/page:num/"
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
