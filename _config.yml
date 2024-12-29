@@ -1,3 +1,10 @@
+# subfolder/_config.yml
+title: music
+baseurl: "/music"   # The path to your subfolder
+
+# Include the main layout, if you want
+layouts_dir: "../_layouts"
+
 # Build settings
 paginate: 5 # Number of posts per page
 # paginate_path: "/page:num/"
