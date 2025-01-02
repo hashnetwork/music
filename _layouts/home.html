@@ -1,0 +1,15 @@
+---
+layout: base
+---
+util: https://mega.nz/file/EjwmnATK#uTrG0hbwCeA-kmcJ7NPDhqmIGe3SO0zOXDB4RMPNmN4
+<h1>Latest Posts</h1>
+
+<ul>
+  {% for post in paginator.posts %}
+    <li>
+      <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+      <p>{{ post.excerpt }}</p>  <!-- Optional: Shows an excerpt of the post -->
+      <p><small>Posted on {{ post.date | date: "%B %d, %Y" }}</small></p>  <!-- Optional: Shows the date of the post -->
+    </li>
+  {% endfor %}
+</ul>

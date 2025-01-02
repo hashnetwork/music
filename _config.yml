@@ -1,16 +1,12 @@
-# subfolder/_config.yml
-title: music
-baseurl: "/music"   # The path to your subfolder
-
-# Include the main layout, if you want
-layouts_dir: "../_layouts"
+baseurl: "/music" # the subpath of your site, e.g. /blog
+url: "https://hashnetwork.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
-paginate: 5 # Number of posts per page
-# paginate_path: "/page:num/"
-paginate_path: "/music/page:num/"
-
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-paginate
+  - jekyll-last-modified-at
+
+paginate: 5          # Number of posts per page
+paginate_path: "/page:num"  # Path for pagination, e.g., /page2
