@@ -1,5 +1,6 @@
 baseurl: ""
-
+include:
+  - _layouts
 # Build settings
 plugins:
   - jekyll-feed
